@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+user_profile
+{% endblock title %}
+
+{% block body %}
+<center>
+    <style>
+        img{
+            height: 120px;
+            width: 120px;
+            border-radius: 100%;
+            margin-left: 80%;
+           
+           
+        }
+    </style>
+     <h1><u>profile</u></h1>
+    <img src="{{PO.photo.url}}" alt="" >
+    <h1>the first name of the user is {{UO.first_name}}</h1>
+    <h1>the last name of the user is {{UO.last_name}}</h1>
+    <h1>the email name of the user is {{UO.email}}</h1>
+    <h1>the phone number of the user is {{PO.pno}}</h1>
+    <h1>the username number of the user is {{PO.username}}</h1>
+    
+</center>
+
+{% endblock body %}
